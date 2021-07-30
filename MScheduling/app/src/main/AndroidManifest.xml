@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.easir.mscheduling">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.easir.mscheduling.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.easir.mscheduling.Register"
+            android:parentActivityName="com.example.easir.mscheduling.MainActivity" />
+        <activity
+            android:name="com.example.easir.mscheduling.LecturerToolBar"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.easir.mscheduling.StudentToolBar"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.easir.mscheduling.AdminToolBar"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.easir.mscheduling.ChatStudent"
+            android:parentActivityName="com.example.easir.mscheduling.StudentChatList" />
+        <activity
+            android:name="com.example.easir.mscheduling.StudentChatList"
+            android:parentActivityName="com.example.easir.mscheduling.StudentToolBar" />
+        <activity android:name="com.example.easir.mscheduling.LecturerChat"
+            android:parentActivityName="com.example.easir.mscheduling.LecturerChatList"/>
+        <activity android:name="com.example.easir.mscheduling.LecturerChatList"
+            android:parentActivityName="com.example.easir.mscheduling.LecturerToolBar"></activity>
+    </application>
+
+</manifest>
